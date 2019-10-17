@@ -1,9 +1,9 @@
-////°úÁ¦ - 20191017 PT3_56~57p Å¬·¡½º ¸ŞÀÎ ¸â¹öÇÔ¼ö ÆÄÀÏÀÇ ºĞ¸®¼öÇà
-//#ifndef Calculator_H
-//#define Calculator_H
-//
-//class calculator {
-//public:
-//	void run();
-//};
-//#endif
+//ê³¼ì œ - 20191017 PT3_56~57p í´ë˜ìŠ¤ ë©”ì¸ ë©¤ë²„í•¨ìˆ˜ íŒŒì¼ì˜ ë¶„ë¦¬ìˆ˜í–‰
+#ifndef Calculator_H
+#define Calculator_H
+
+class calculator {
+public:
+	void run();
+};
+#endif
