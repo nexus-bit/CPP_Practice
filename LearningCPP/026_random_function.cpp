@@ -1,29 +1,29 @@
-//#include<iostream>
-//#include<ctime> //½Ã°£¿¡ µû¸¥ ·£´ıÀ» À§ÇÑ Çì´õ
-//using namespace std;
-//
-//int main()
-//{
-//	srand(1); //ÀÌ ¼ö¿¡ µû¶ó rand()ÀÇ °ªÀÌ ´Ş¶óÁü, ±âº» : 1
-//	for (int i = 0; i < 10; i++)
-//		cout << rand() << endl; //rand()´Â ±âº»ÀûÀ¸·Î 41, 18467...
-//	puts("");
-//
-//	cout << "½Ã°£ °ªÀº ¸Å¹ø ¹Ù²ñ : ";
-//	cout << time(NULL) << endl; //NULLÀº ´ë¹®ÀÚ
-//	puts("");
-//
-//	srand((unsigned int)time(NULL)); //ÀÌÁ¦ ·£´ı ÇÔ¼ö°ªÀº ½Ã°£¿¡ µû¶ó ´Ş¶óÁü
-//
-//	for (int i = 0; i < 10; i++)
-//		cout << rand() << endl; //srand(½Ã°£¿¡µû¶ó ¹Ù²ñ)¿¡ µû¸¥ ·£´ı°ª »ı¼º
-//	puts("");
-//
-//	for (int i = 0; i < 10; i++)
-//		cout << (rand() % 97) + 4 << endl; //0~96±îÁöÀÇ 97°³ÀÇ °ª -> 4~101±îÁöÀÇ 97°³ÀÇ °ª
-//	puts("");
-//
-//	for (int i = 0; i < 10; i++)
-//		cout << (rand() % 8) + 4 << endl; //0~7±îÁöÀÇ 8°³ÀÇ °ª -> 4~11±îÁöÀÇ 8°³ÀÇ °ª
-//	puts("");
-//}
+#include<iostream>
+#include<ctime> //ì‹œê°„ì— ë”°ë¥¸ ëœë¤ì„ ìœ„í•œ í—¤ë”
+using namespace std;
+
+int main()
+{
+	srand(1); //ì´ ìˆ˜ì— ë”°ë¼ rand()ì˜ ê°’ì´ ë‹¬ë¼ì§, ê¸°ë³¸ : 1
+	for (int i = 0; i < 10; i++)
+		cout << rand() << endl; //rand()ëŠ” ê¸°ë³¸ì ìœ¼ë¡œ 41, 18467...
+	puts("");
+
+	cout << "ì‹œê°„ ê°’ì€ ë§¤ë²ˆ ë°”ë€œ : ";
+	cout << time(NULL) << endl; //NULLì€ ëŒ€ë¬¸ì
+	puts("");
+
+	srand((unsigned int)time(NULL)); //ì´ì œ ëœë¤ í•¨ìˆ˜ê°’ì€ ì‹œê°„ì— ë”°ë¼ ë‹¬ë¼ì§
+
+	for (int i = 0; i < 10; i++)
+		cout << rand() << endl; //srand(ì‹œê°„ì—ë”°ë¼ ë°”ë€œ)ì— ë”°ë¥¸ ëœë¤ê°’ ìƒì„±
+	puts("");
+
+	for (int i = 0; i < 10; i++)
+		cout << (rand() % 97) + 4 << endl; //0~96ê¹Œì§€ì˜ 97ê°œì˜ ê°’ -> 4~101ê¹Œì§€ì˜ 97ê°œì˜ ê°’
+	puts("");
+
+	for (int i = 0; i < 10; i++)
+		cout << (rand() % 8) + 4 << endl; //0~7ê¹Œì§€ì˜ 8ê°œì˜ ê°’ -> 4~11ê¹Œì§€ì˜ 8ê°œì˜ ê°’
+	puts("");
+}
