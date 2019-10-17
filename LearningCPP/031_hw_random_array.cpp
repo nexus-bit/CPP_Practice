@@ -1,41 +1,41 @@
-////°úÁ¦ - 20191017 PT_random ·£´ı ÇÔ¼öÀÇ ÀÀ¿ë
-//#include<iostream>
-//#include<ctime>
-//#include<cstdlib>
-//using namespace std;
-//
-//int main() {
-//
-//	srand((unsigned int)time(NULL));
-//	float arr[52][52] = { 0 }; //¹è¿­Àº ¿©À¯·Ó°Ô ¸¸µé¾î µÒ, 50*50±îÁö °¡´É
-//
-//	cout << "·£´ı¼ö¸¦ ¸¸µé ¹è¿­ÀÇ Å©±â(i, j)¸¦ ÀÔ·ÂÇÏ¼¼¿ä" << endl;
-//	cout << "ÃÖ´ë 50Çà50¿­±îÁö °¡´ÉÇÏÁö¸¸ È­¸é¿¡ ´Ù Ãâ·ÂÇÏ±â Èûµé ¼ö ÀÖ½À´Ï´Ù.\nrow col >> ";
-//	int row, col;
-//	cin >> row >> col;
-//
-//	for (int i = 0; i < row; i++)
-//		for (int j = 0; j < col; j++)
-//			arr[i][j] = rand() % 5 + 1; //row, colÅ©±âÀÇ ¹è¿­¿¡ ·£´ıÇÔ¼ö·Î ¼ıÀÚ»ı¼º
-//
-//	for (int i = 0; i < row; i++)
-//		for (int j = 0; j < col; j++)
-//		{
-//			arr[row][j] += arr[i][j]; //[row,j]¿¡ °¡·ÎÇÕ ÀúÀå, ¹è¿­Àº 0ºÎÅÍ ½ÃÀÛÇÏ¹Ç·Î row+1ÀÌ ºÙÁö ¾ÊÀ½
-//			arr[i][col] += arr[i][j]; //[i,col]¿¡ ¼­·ÎÇÕ ÀúÀå
-//			arr[row][col] += arr[i][j];  //[row,col]¿¡ ´ë°¢¼±ÇÕ ÀúÀå
-//		}
-//
-//	for (int i = 0; i < row; i++)
-//		for (int j = 0; j < col; j++) {
-//			arr[i][col + 1] = arr[i][col] / col; //[row+1,j]¿¡ °¡·ÎÇÕÀ» ÅëÇØ Æò±Õ ÀúÀå, ¹è¿­Àº 0ºÎÅÍ ½ÃÀÛÇÏ¹Ç·Î row+2°¡ ¾Æ´Ô
-//			arr[row + 1][j] = arr[row][j] / row;
-//		}
-//
-//	for (int i = 0; i < row + 2; i++) {
-//		for (int j = 0; j < col + 2; j++) { //[row, colÀÇ Å©±â + ´©ÀûÇÕ °ø°£ 1 + Æò±Õ °ø°£ 1 ]¾¿ Áõ°¡ÇÑ row+2
-//			cout << arr[i][j] << "	";
-//		}
-//		puts("\n");
-//	}
-//}
+//ê³¼ì œ - 20191017 PT_random ëœë¤ í•¨ìˆ˜ì˜ ì‘ìš©
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+
+int main() {
+
+	srand((unsigned int)time(NULL));
+	float arr[52][52] = { 0 }; //ë°°ì—´ì€ ì—¬ìœ ë¡­ê²Œ ë§Œë“¤ì–´ ë‘ , 50*50ê¹Œì§€ ê°€ëŠ¥
+
+	cout << "ëœë¤ìˆ˜ë¥¼ ë§Œë“¤ ë°°ì—´ì˜ í¬ê¸°(i, j)ë¥¼ ì…ë ¥í•˜ì„¸ìš”" << endl;
+	cout << "ìµœëŒ€ 50í–‰50ì—´ê¹Œì§€ ê°€ëŠ¥í•˜ì§€ë§Œ í™”ë©´ì— ë‹¤ ì¶œë ¥í•˜ê¸° í˜ë“¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.\nrow col >> ";
+	int row, col;
+	cin >> row >> col;
+
+	for (int i = 0; i < row; i++)
+		for (int j = 0; j < col; j++)
+			arr[i][j] = rand() % 5 + 1; //row, colí¬ê¸°ì˜ ë°°ì—´ì— ëœë¤í•¨ìˆ˜ë¡œ ìˆ«ììƒì„±
+
+	for (int i = 0; i < row; i++)
+		for (int j = 0; j < col; j++)
+		{
+			arr[row][j] += arr[i][j]; //[row,j]ì— ê°€ë¡œí•© ì €ì¥, ë°°ì—´ì€ 0ë¶€í„° ì‹œì‘í•˜ë¯€ë¡œ row+1ì´ ë¶™ì§€ ì•ŠìŒ
+			arr[i][col] += arr[i][j]; //[i,col]ì— ì„œë¡œí•© ì €ì¥
+			arr[row][col] += arr[i][j];  //[row,col]ì— ëŒ€ê°ì„ í•© ì €ì¥
+		}
+
+	for (int i = 0; i < row; i++)
+		for (int j = 0; j < col; j++) {
+			arr[i][col + 1] = arr[i][col] / col; //[row+1,j]ì— ê°€ë¡œí•©ì„ í†µí•´ í‰ê·  ì €ì¥, ë°°ì—´ì€ 0ë¶€í„° ì‹œì‘í•˜ë¯€ë¡œ row+2ê°€ ì•„ë‹˜
+			arr[row + 1][j] = arr[row][j] / row;
+		}
+
+	for (int i = 0; i < row + 2; i++) {
+		for (int j = 0; j < col + 2; j++) { //[row, colì˜ í¬ê¸° + ëˆ„ì í•© ê³µê°„ 1 + í‰ê·  ê³µê°„ 1 ]ì”© ì¦ê°€í•œ row+2
+			cout << arr[i][j] << "	";
+		}
+		puts("\n");
+	}
+}
