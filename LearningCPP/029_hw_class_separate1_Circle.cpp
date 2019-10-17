@@ -1,18 +1,18 @@
-////°úÁ¦ - 20191016 PT3_52~55p Çì´õ Å¬·¡½º ¸ÅÀÎ ÆÄÀÏÀÇ ºĞ¸®¼öÇà
-//#include<iostream>
-//#include "029_hw_class_separate1_Circle.h" //¿ø·¡´Â ¸ŞÀÎ ÇÔ¼ö¸¦ ¹­À» ¶§ Çì´õ ÆÄÀÏÀÌ Áßº¹ÂüÁ¶°¡ µÇ¾î¼­ ¿À·ù ¹ß»ı
-//using namespace std;
-//
-//Circle::Circle() {
-//	radius = 1;
-//	cout << "¹İÁö¸§" << radius;
-//	cout << " ¿ø »ı¼º" << endl;
-//}
-//Circle::Circle(int r) {
-//	radius = r;
-//	cout << "¹İÁö¸§" << radius;
-//	cout << " ¿ø »ı¼º" << endl;
-//}
-//double Circle::getArea() {
-//	return 3.14 * radius * radius;
-//}
+//20191016 PT3_52~55p í—¤ë” í´ë˜ìŠ¤ ë§¤ì¸ íŒŒì¼ì˜ ë¶„ë¦¬ìˆ˜í–‰
+#include<iostream>
+#include "029_hw_class_separate1_Circle.h" //ì›ë˜ëŠ” ë©”ì¸ í•¨ìˆ˜ë¥¼ ë¬¶ì„ ë•Œ í—¤ë” íŒŒì¼ì´ ì¤‘ë³µì°¸ì¡°ê°€ ë˜ì–´ì„œ ì˜¤ë¥˜ ë°œìƒ
+using namespace std;
+
+Circle::Circle() {
+	radius = 1;
+	cout << "ë°˜ì§€ë¦„" << radius;
+	cout << " ì› ìƒì„±" << endl;
+}
+Circle::Circle(int r) {
+	radius = r;
+	cout << "ë°˜ì§€ë¦„" << radius;
+	cout << " ì› ìƒì„±" << endl;
+}
+double Circle::getArea() {
+	return 3.14 * radius * radius;
+}
