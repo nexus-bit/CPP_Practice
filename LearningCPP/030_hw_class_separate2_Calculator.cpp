@@ -1,14 +1,14 @@
-////°úÁ¦ - 20191017 PT3_56~57p Å¬·¡½º ¸ŞÀÎ ¸â¹öÇÔ¼ö ÆÄÀÏÀÇ ºĞ¸®¼öÇà
-//#include<iostream>
-//#include "030_hw_class_separate2_Calculator.h"
-//#include "030_hw_class_separate2_Adder.h"
-//using namespace std;
-//
-//
-//void calculator::run() {
-//	cout << "µÎ °³ÀÇ ¼ö ÀÔ·Â>";
-//	int a, b;
-//	cin >> a >> b; //Á¤¼ö µÎ °³ ÀÔ·Â
-//	Adder adder(a, b); //µ¡¼À±â »ı¼º
-//	cout << adder.process(); //µ¡¼À±â °è»ê
-//}
+//ê³¼ì œ - 20191017 PT3_56~57p í´ë˜ìŠ¤ ë©”ì¸ ë©¤ë²„í•¨ìˆ˜ íŒŒì¼ì˜ ë¶„ë¦¬ìˆ˜í–‰
+#include<iostream>
+#include "030_hw_class_separate2_Calculator.h"
+#include "030_hw_class_separate2_Adder.h"
+using namespace std;
+
+
+void calculator::run() {
+	cout << "ë‘ ê°œì˜ ìˆ˜ ì…ë ¥>";
+	int a, b;
+	cin >> a >> b; //ì •ìˆ˜ ë‘ ê°œ ì…ë ¥
+	Adder adder(a, b); //ë§ì…ˆê¸° ìƒì„±
+	cout << adder.process(); //ë§ì…ˆê¸° ê³„ì‚°
+}
