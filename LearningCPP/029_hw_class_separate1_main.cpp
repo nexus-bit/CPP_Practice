@@ -1,17 +1,17 @@
-////°úÁ¦ - 20191016 PT3_52~55p Çì´õ Å¬·¡½º ¸ÅÀÎ ÆÄÀÏÀÇ ºĞ¸®¼öÇà
-//#include<iostream>
-//#include "029_hw_class_separate1_Circle.h" //Çì´õ´Â Áßº¹À¸·Î ÂüÁ¶ÇÏ¸é ¿¡·¯°¡ ¹ß»ıÇÏÁö¸¸
-//#include "029_hw_class_separate1_Circle.h" //Çì´õ ÆÄÀÏ ³»¿¡ #ifndef¿Í #endif°¡ ÀÖ¾î¼­ ¹ß»ıÇÏÁö ¾Ê°Ô Çß´Ù.
-//using namespace std;
-//
-//int main() {
-//	Circle donut;
-//	double area = donut.getArea();
-//	cout << "donut ¸éÀûÀº ";
-//	cout << area << endl;
-//
-//	Circle pizza(30);
-//	area = pizza.getArea();
-//	cout << "pizza ¸éÀûÀº " << area << endl;
-//	cout << "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù";
-//}
+//20191016 PT3_52~55p í—¤ë” í´ë˜ìŠ¤ ë§¤ì¸ íŒŒì¼ì˜ ë¶„ë¦¬ìˆ˜í–‰
+#include<iostream>
+#include "029_hw_class_separate1_Circle.h" //í—¤ë”ëŠ” ì¤‘ë³µìœ¼ë¡œ ì°¸ì¡°í•˜ë©´ ì—ëŸ¬ê°€ ë°œìƒí•˜ì§€ë§Œ
+#include "029_hw_class_separate1_Circle.h" //í—¤ë” íŒŒì¼ ë‚´ì— #ifndefì™€ #endifê°€ ìˆì–´ì„œ ë°œìƒí•˜ì§€ ì•Šê²Œ í–ˆë‹¤.
+using namespace std;
+
+int main() {
+	Circle donut;
+	double area = donut.getArea();
+	cout << "donut ë©´ì ì€ ";
+	cout << area << endl;
+
+	Circle pizza(30);
+	area = pizza.getArea();
+	cout << "pizza ë©´ì ì€ " << area << endl;
+	cout << "í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤";
+}
