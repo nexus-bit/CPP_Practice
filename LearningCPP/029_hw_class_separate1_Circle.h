@@ -1,13 +1,13 @@
-////°úÁ¦ - 20191016 PT3_52~55p Çì´õ Å¬·¡½º ¸ÅÀÎ ÆÄÀÏÀÇ ºĞ¸®¼öÇà
-//#ifndef CIRCL_h //Áßº¹ ÂüÁ¶ ¿À·ù ÇØ°á
-//#define CIRCL_h
-//
-//class Circle {
-//private:
-//	int radius;
-//public:
-//	Circle();
-//	Circle(int r);
-//	double getArea();
-//};
-//#endif
+//20191016 PT3_52~55p í—¤ë” í´ë˜ìŠ¤ ë§¤ì¸ íŒŒì¼ì˜ ë¶„ë¦¬ìˆ˜í–‰
+#ifndef CIRCL_h //ì¤‘ë³µ ì°¸ì¡° ì˜¤ë¥˜ í•´ê²°
+#define CIRCL_h
+
+class Circle {
+private:
+	int radius;
+public:
+	Circle();
+	Circle(int r);
+	double getArea();
+};
+#endif
