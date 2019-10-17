@@ -1,33 +1,33 @@
-////°úÁ¦ - 20191017 pt3_56~57p Å¬·¡½º, ¸ŞÀÎ, ¸â¹öÇÔ¼ö ÇÏ³ªÀÇ ÆÄÀÏ
-//#include<iostream>
-//using namespace std;
-//
-//class adder {
-//	int op1, op2;
-//public:
-//	adder(int a, int b);
-//	int process();
-//};
-//adder::adder(int a, int b) {
-//	op1 = a; op2 = b;
-//}
-//int adder::process() {
-//	return op1 + op2;
-//}
-//
-//class calculator {
-//public:
-//	void run();
-//};
-//void calculator::run() {
-//	cout << "µÎ °³ÀÇ ¼ö ÀÔ·Â>";
-//	int a, b;
-//	cin >> a >> b; //Á¤¼ö µÎ °³ ÀÔ·Â
-//	adder adder(a, b); //µ¡¼À±â »ı¼º
-//	cout << adder.process(); //µ¡¼À±â °è»ê
-//}
-//
-//int main() {
-//	calculator object1;
-//	object1.run();
-//}
+//20191017 pt3_56~57p í´ë˜ìŠ¤, ë©”ì¸, ë©¤ë²„í•¨ìˆ˜ í•˜ë‚˜ì˜ íŒŒì¼
+#include<iostream>
+using namespace std;
+
+class adder {
+	int op1, op2;
+public:
+	adder(int a, int b);
+	int process();
+};
+adder::adder(int a, int b) {
+	op1 = a; op2 = b;
+}
+int adder::process() {
+	return op1 + op2;
+}
+
+class calculator {
+public:
+	void run();
+};
+void calculator::run() {
+	cout << "ë‘ ê°œì˜ ìˆ˜ ì…ë ¥>";
+	int a, b;
+	cin >> a >> b; //ì •ìˆ˜ ë‘ ê°œ ì…ë ¥
+	adder adder(a, b); //ë§ì…ˆê¸° ìƒì„±
+	cout << adder.process(); //ë§ì…ˆê¸° ê³„ì‚°
+}
+
+int main() {
+	calculator object1;
+	object1.run();
+}
