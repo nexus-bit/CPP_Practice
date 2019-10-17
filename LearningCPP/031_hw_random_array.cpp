@@ -1,4 +1,4 @@
-//과제 - 20191017 PT_random 랜덤 함수의 응용
+﻿//20191017 PT_random 랜덤 함수의 응용
 #include<iostream>
 #include<ctime>
 #include<cstdlib>
