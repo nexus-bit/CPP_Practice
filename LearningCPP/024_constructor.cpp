@@ -1,51 +1,51 @@
-//#include<iostream>
-//#include<cstdlib>
-//#include<ctime>
-//using namespace std;
-//
-//class hello {
-//public:
-//	int x;
-//	int y;
-//
-//	hello(); //¸Å°³º¯¼ö°¡ ¾ø´Â »ı¼ºÀÚ
-//	hello(int a); //¸Å°³º¯¼ö°¡ ÇÏ³ªÀÎ »ı¼ºÀÚ
-//	hello(int a, int b); //¸Å°³º¯¼ö°¡ µÎ°³ÀÎ »ı¼ºÀÚ
-//
-//	int func();
-//	int func(int a);
-//	int func(int a, int b); //ÇÔ¼ö
-//};
-//hello::hello() {
-//	x = 9; y = 1; //helloÅ¬·¡½ºÀÇ ¸â¹ö º¯¼öÀÎ x, y¸¦ a, b·Î ÀÔ·Â ¹Ş¾Æµµ ¹«¹æ(ÇÒ °Í °°´Ù)
-//}
-//hello::hello(int a) {
-//	x = 7; y = 0;
-//}
-//hello::hello(int a, int b) {
-//	x = 1; y = 1;
-//}
-//
-//int hello::func() {
-//	return (x + y);
-//}
-//int hello::func(int a) {
-//	return (x - y);
-//}
-//
-//int hello::func(int a, int b) {
-//	return (x * y);
-//}
-//int main() {
-//	hello no3; //Å¬·¡½º °´Ã¼ »ı¼º½Ã ±âº» »ı¼ºÀÚÀÇ ¸Å°³ º¯¼ö ¾øÀ½ - 9, 1
-//	cout << no3.func()/*'°´Ã¼.ÇÔ¼ö'·Î µ¡¼À¼öÇà*/ << " " << no3.func(3, 4232)/*'°´Ã¼.ÇÔ¼ö'·Î °ö¼À ¼öÇà*/ << endl; //¸Å°³ º¯¼ö¿¡ ¸Â´Â ÇÔ¼ö ¼öÇàµÊ.
-//
-//	hello no1(8); //Å¬·¡½º °´Ã¼ »ı¼º½Ã ±âº» »ı¼ºÀÚÀÇ ¸Å°³ º¯¼ö°¡ ÇÏ³ª - 7, 0
-//	cout << no1.func() << " " << no1.func(3231, 4) << endl;
-//
-//	hello no2(8, 4); //Å¬·¡½º °´Ã¼ »ı¼º½Ã ±âº» »ı¼ºÀÚÀÇ ¸Å°³ º¯¼ö°¡ µÑ - 1, 1
-//	cout << no2.func() << " " << no2.func(3, 4) << endl;
-//
-//
-//
-//}
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+
+class hello {
+public:
+	int x;
+	int y;
+
+	hello(); //ë§¤ê°œë³€ìˆ˜ê°€ ì—†ëŠ” ìƒì„±ì
+	hello(int a); //ë§¤ê°œë³€ìˆ˜ê°€ í•˜ë‚˜ì¸ ìƒì„±ì
+	hello(int a, int b); //ë§¤ê°œë³€ìˆ˜ê°€ ë‘ê°œì¸ ìƒì„±ì
+
+	int func();
+	int func(int a);
+	int func(int a, int b); //í•¨ìˆ˜
+};
+hello::hello() {
+	x = 9; y = 1; //helloí´ë˜ìŠ¤ì˜ ë©¤ë²„ ë³€ìˆ˜ì¸ x, yë¥¼ a, bë¡œ ì…ë ¥ ë°›ì•„ë„ ë¬´ë°©(í•  ê²ƒ ê°™ë‹¤)
+}
+hello::hello(int a) {
+	x = 7; y = 0;
+}
+hello::hello(int a, int b) {
+	x = 1; y = 1;
+}
+
+int hello::func() {
+	return (x + y);
+}
+int hello::func(int a) {
+	return (x - y);
+}
+
+int hello::func(int a, int b) {
+	return (x * y);
+}
+int main() {
+	hello no3; //í´ë˜ìŠ¤ ê°ì²´ ìƒì„±ì‹œ ê¸°ë³¸ ìƒì„±ìì˜ ë§¤ê°œ ë³€ìˆ˜ ì—†ìŒ - 9, 1
+	cout << no3.func()/*'ê°ì²´.í•¨ìˆ˜'ë¡œ ë§ì…ˆìˆ˜í–‰*/ << " " << no3.func(3, 4232)/*'ê°ì²´.í•¨ìˆ˜'ë¡œ ê³±ì…ˆ ìˆ˜í–‰*/ << endl; //ë§¤ê°œ ë³€ìˆ˜ì— ë§ëŠ” í•¨ìˆ˜ ìˆ˜í–‰ë¨.
+
+	hello no1(8); //í´ë˜ìŠ¤ ê°ì²´ ìƒì„±ì‹œ ê¸°ë³¸ ìƒì„±ìì˜ ë§¤ê°œ ë³€ìˆ˜ê°€ í•˜ë‚˜ - 7, 0
+	cout << no1.func() << " " << no1.func(3231, 4) << endl;
+
+	hello no2(8, 4); //í´ë˜ìŠ¤ ê°ì²´ ìƒì„±ì‹œ ê¸°ë³¸ ìƒì„±ìì˜ ë§¤ê°œ ë³€ìˆ˜ê°€ ë‘˜ - 1, 1
+	cout << no2.func() << " " << no2.func(3, 4) << endl;
+
+
+
+}
