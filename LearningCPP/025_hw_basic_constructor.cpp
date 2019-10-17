@@ -1,19 +1,19 @@
-////°úÁ¦ - 20191010 PT3_29p ±âº» »ı¼ºÀÚ ¿¡·¯ È®ÀÎ
-//#include<iostream>
-//using namespace std;
-//
-//class Circle {
-//public:
-//	int radius;
-//	double getArea();
-//	Circle(int r); //circle »ı¼ºÀÚ°¡ ÀÖ¾î¼­ µû·Î ±âº» »ı¼ºÀÚ ¸¸µê
-//};
-//
-//Circle::Circle(int r) {
-//	radius = r;
-//}
-//
-//int main() {
-//	Circle pizza(30);
-//	//Circle donut; - ±âº» »ı¼ºÀÚ°¡ ¾øÀ¸¹Ç·Î ÄÄÆÄÀÏ ¿¡·¯
-//}
+//20191010 PT3_29p ê¸°ë³¸ ìƒì„±ì ì—ëŸ¬ í™•ì¸
+#include<iostream>
+using namespace std;
+
+class Circle {
+public:
+	int radius;
+	double getArea();
+	Circle(int r); //circle ìƒì„±ìê°€ ìˆì–´ì„œ ë”°ë¡œ ê¸°ë³¸ ìƒì„±ì ë§Œë“¦
+};
+
+Circle::Circle(int r) {
+	radius = r;
+}
+
+int main() {
+	Circle pizza(30);
+	//Circle donut; - ê¸°ë³¸ ìƒì„±ìê°€ ì—†ìœ¼ë¯€ë¡œ ì»´íŒŒì¼ ì—ëŸ¬
+}
