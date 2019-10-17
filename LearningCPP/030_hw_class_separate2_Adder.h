@@ -1,11 +1,11 @@
-////°úÁ¦ - 20191017 PT3_56~57p Å¬·¡½º ¸ŞÀÎ ¸â¹öÇÔ¼ö ÆÄÀÏÀÇ ºĞ¸®¼öÇà
-//#ifndef ADDER_H
-//#define ADDER_H
-//
-//class Adder {
-//	int op1, op2;
-//public:
-//	Adder(int a, int b);
-//	int process();
-//};
-//#endif
+//ê³¼ì œ - 20191017 PT3_56~57p í´ë˜ìŠ¤ ë©”ì¸ ë©¤ë²„í•¨ìˆ˜ íŒŒì¼ì˜ ë¶„ë¦¬ìˆ˜í–‰
+#ifndef ADDER_H
+#define ADDER_H
+
+class Adder {
+	int op1, op2;
+public:
+	Adder(int a, int b);
+	int process();
+};
+#endif
