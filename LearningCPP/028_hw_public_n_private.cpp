@@ -1,35 +1,35 @@
-////°úÁ¦ - 20191016 PT3_41p Å¬·¡½º Á¢±Ù ±ÇÇÑ ÁöÁ¤ ¿À·ù test
-//#include<iostream>
-//using namespace std;
-//
-//class PrivateAccessError {
-//private: //¹Ø¿¡ °ÍµéÀ» È£ÃâÇÏ·Á¸é private -> publicÀ¸·Î ¹Ù²Ù½Ã¿À
-//	int a;
-//	void f();
-//	PrivateAccessError();
-//public:
-//	int b;
-//	PrivateAccessError(int x);
-//	void g();
-//};
-//PrivateAccessError::PrivateAccessError() {
-//	a = 1; b = 1;
-//}
-//PrivateAccessError::PrivateAccessError(int x) {
-//	a = x; b = x;
-//}
-//void PrivateAccessError::f() {
-//	a = 5; b = 5;
-//}
-//void PrivateAccessError::g() {
-//	a = 6; b = 6;
-//}
-//
-//int main() {
-//	PrivateAccessError object1; //privateÀÌ¹Ç·Î È£ÃâÇÒ ¼ö ¾ø´Ù. È£ÃâÇÏ·Á¸é publicÀ¸·Î ¹Ù²Ù¾î¾ß ÇÔ
-//	PrivateAccessError object2(100);
-//	object2.a = 10;
-//	object2.b = 20;
-//	object2.f(); //privateÀÌ¹Ç·Î È£ÃâÇÒ ¼ö ¾ø´Ù. È£ÃâÇÏ·Á¸é publicÀ¸·Î ¹Ù²Ù¾î¾ß ÇÔ
-//	object2.g();
-//}
+//20191016 PT3_41p í´ë˜ìŠ¤ ì ‘ê·¼ ê¶Œí•œ ì§€ì • ì˜¤ë¥˜ test
+#include<iostream>
+using namespace std;
+
+class PrivateAccessError {
+private: //ë°‘ì— ê²ƒë“¤ì„ í˜¸ì¶œí•˜ë ¤ë©´ private -> publicìœ¼ë¡œ ë°”ê¾¸ì‹œì˜¤
+	int a;
+	void f();
+	PrivateAccessError();
+public:
+	int b;
+	PrivateAccessError(int x);
+	void g();
+};
+PrivateAccessError::PrivateAccessError() {
+	a = 1; b = 1;
+}
+PrivateAccessError::PrivateAccessError(int x) {
+	a = x; b = x;
+}
+void PrivateAccessError::f() {
+	a = 5; b = 5;
+}
+void PrivateAccessError::g() {
+	a = 6; b = 6;
+}
+
+int main() {
+	PrivateAccessError object1; //privateì´ë¯€ë¡œ í˜¸ì¶œí•  ìˆ˜ ì—†ë‹¤. í˜¸ì¶œí•˜ë ¤ë©´ publicìœ¼ë¡œ ë°”ê¾¸ì–´ì•¼ í•¨
+	PrivateAccessError object2(100);
+	object2.a = 10;
+	object2.b = 20;
+	object2.f(); //privateì´ë¯€ë¡œ í˜¸ì¶œí•  ìˆ˜ ì—†ë‹¤. í˜¸ì¶œí•˜ë ¤ë©´ publicìœ¼ë¡œ ë°”ê¾¸ì–´ì•¼ í•¨
+	object2.g();
+}
